@@ -1,0 +1,103 @@
+*{
+  font-family: '微软雅黑';
+  margin: 0;
+}
+
+
+$baseFontSize:10px;//10px
+
+@function pxToRem($px){
+  @return $px/$baseFontSize*1rem
+}
+
+h1{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+  li{
+    display: inline-block;
+  }
+}
+
+
+$warpWidth:1170px;
+$titleColor:#0eb493;
+$baseColor:#0eb493;
+$pColor:#5b646e;
+
+.wrap-center{
+  margin: 0 auto;
+  width: $warpWidth;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media all and(max-width: 600px) {
+  .wrap-center{
+    width: 100%;
+  }
+}
+
+
+
+.clearfix{
+  &:after{
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    clear: both;
+    overflow: hidden;
+  }
+}
+
+
+
+
+.borderLine{
+  display: inline-block;
+  width:30px;
+  vertical-align: super;
+  height: 1px;
+  background: #0feb9e;
+}
+
+.love-icon{
+  @include sprite($icon-love,inline-block);
+  margin-top: 10px;
+  position: relative;
+  width: 230px;
+  line-height: 22px;
+  left: 105px;
+  overflow: visible;
+  &:before{
+    margin-left: -205px;
+    vertical-align: middle;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background: #dce1e5;
+    display: inline-block;
+  }
+  &:after{
+    margin-left: 40px;
+    vertical-align: middle;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background: #dce1e5;
+    display: inline-block;
+  }
+}
+
+//各标题h1
+.base-color{
+  color: $baseColor;
+}
+.base-p{
+  margin-top: 40px;
+  color: $pColor;
+}

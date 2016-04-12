@@ -1,0 +1,55 @@
+.features{
+  background: #f4f7f9;
+  box-sizing: border-box;
+  height:460px;
+  padding-top: 76px;
+  h1{
+    color: $baseColor;
+  }
+
+  .features-list{
+    margin-top: 70px;
+
+    li{
+      width: 370px;
+      display: inline-block;
+
+      .features-left{
+        box-sizing: border-box;
+        width: 70px;
+        padding:20px 10px ;
+        float: left;
+      }
+
+      .features-right{
+        text-align: left;
+        margin-left: 70px;
+
+        h3{
+          color: #062033;
+        }
+
+        p{
+          color:$pColor;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media all and (max-width: 600px) {
+  .features{
+    height: 100%;
+    .features-list{
+      padding: 0;
+      li{
+        width: 300px;
+      }
+    }
+  }
+}
+

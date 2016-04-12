@@ -1,0 +1,68 @@
+.work{
+  padding-top: 100px;
+  height: 950px;
+  position: relative;
+  h1{
+    color: $baseColor;
+  }
+  p{
+    margin-top: 40px;
+    color: $pColor;
+  }
+  .work-tab-list{
+    margin-top:50px ;
+    margin-bottom: 40px;
+    li{
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      cursor: pointer ;
+    }
+    .work-current{
+      color: #fff;
+      background: $baseColor;
+      border-radius: 3px;
+    }
+  }
+  .work-gallery{
+    font-size: 0;
+    li{
+      display: inline-block;
+      width: 25%;
+      height: 100%;
+      img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .work-gallery-hover{
+    text-align: center;
+    background: $baseColor;
+    opacity: 0.9;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    .work-gallery-content{
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+      h3{
+        margin-top: 13px;
+        color: #fff;
+      }
+      p{
+        margin-top: 0;
+        color: #fff;
+      }
+
+    }
+    .icon-work-eye{
+      @include sprite($eye,inline-block)
+    }
+  }
+}
