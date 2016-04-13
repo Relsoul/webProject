@@ -1,0 +1,458 @@
+$color:#413d4b;
+.second-screen{
+  padding: 70px 0px 70px 70px;
+  text-align: left;
+  .second-screen-left{
+    float: left;
+    margin-right: 100px;
+    min-height: 250px;
+  }
+  @media all and(max-width: 1005px ) {
+    &{
+      padding-left: 0;
+      text-align: center;
+    }
+    .second-screen-left{
+      float: none;
+      margin-right: 0;
+    }
+
+  }
+  .second-screen-right{
+    h3{
+      color: $color;
+      margin-bottom: 30px;
+    }
+    p{
+      color: $color;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.third-screen{
+  @include opacityBg(150px);
+  background: url("../images/build-bg.jpg") round;
+  padding: 200px 0;
+  .watch-btn{
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding-left: 10px;
+    cursor: pointer;
+    &:active,&:focus,&:visited{
+      outline: none;
+    }
+  }
+  p{
+    margin-top: 35px;
+    color: #fff;
+  }
+}
+.third-screen:before{
+  @include opatiytBgBefore(600px);
+}
+
+
+.fourth-screen,.fifth-screen,.sixth-screen,.seventh-screen,.eighth-screen,footer{
+  padding: 70px 0;
+}
+.fourth-screen{
+
+  h1{
+    color: $color;
+
+  }
+  h5{
+    color: #2f2d35
+  }
+  .show-list{
+    width: 100%;
+    padding-top: 33px;
+    .show-list-item{
+      img{
+        margin-bottom: 35px;
+      }
+      h4{
+        color: $color;
+        margin-bottom: 25px;
+      }
+      p{
+        color: #333333;
+      }
+      box-sizing: border-box;
+      margin-bottom: 33px ;
+      width: 283px;
+      min-height:215px;
+      display: inline-block;
+    }
+  }
+}
+
+.fifth-screen h1,.fourth-screen h1{
+  margin-bottom: 15px;
+}
+.fifth-screen{
+  @include  opacityBg(570px);
+  background: url("../images/tree-bg.jpg") round;
+  .f-s-show-list{
+    padding-top: 45px;
+  }
+  .f-s-show-item{
+    margin: 0 10px;
+    display: inline-block;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #78758d;
+    .item-bg{
+      width: 220px;
+      height: 230px;
+      background: #fff;
+      margin-bottom: 20px;
+    }
+    h3,p{
+      color: #fff;
+    }
+    h3{
+      margin-bottom: 10px;
+    }
+  }
+  &>p{
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom:30px ;
+  }
+}
+.fifth-screen:before{
+  @include opatiytBgBefore(710px);
+}
+@media all and (max-width:1005px){
+  .fifth-screen{
+    height: auto;
+    background: none;
+    .f-s-show-item{
+      margin: 10px 0;
+    }
+  }
+  .fifth-screen:before{
+    height: 100%;
+  }
+}
+
+.sixth-screen{
+  .our-work{
+    padding-bottom: 70px;
+    text-align: left;
+    h1{
+      color: #4e4a57;
+      float: left;
+    }
+    p{
+      text-align: right;
+      color: $color;
+      span{
+        font-size: 33px;
+        vertical-align: sub;
+      }
+    }
+  }
+  .our-work-bg{
+    left: 0;
+    width: 100%;
+    height: 400px;
+    font-size: 0;
+    position: absolute;
+    li{
+      float: left;
+    }
+    $bg-list:(1:#b6b6b6,2:#acacac,3:#a1a1a1,4:#8a8a8a,5:#b6b6b6,6:#a4a4a4,7:#a4a4a4,8:#b6b6b6,9:#8a8a8a,10:#a1a1a1,11:#acacac,12:#b6b6b6);
+    @each $nth,$bg-color in $bg-list{
+      li:nth-child(#{$nth}){
+        width: 16.6%;
+        height: 200px;
+        background:$bg-color ;
+      }
+    }
+  }
+  .night-btn{
+    margin-top: 470px;
+  }
+  @media all and (max-width:600px) {
+    .our-work-bg{
+      width: 100%;
+      height: 100px;
+      background: #b6b6b6;
+      li{
+        display: none;
+      }
+    }
+    .night-btn{
+      margin-top: 170px;
+    }
+  }
+}
+
+
+.seventh-screen{
+  background: url("../images/people-bg.jpg" ) round;
+  @include opacityBg(360px);
+  @media all and (max-width: 600px) {
+   height: auto;
+    .show-avatar{
+      span{
+        display: none;
+      }
+    }
+  }
+  h1{
+    margin-bottom: 20px;
+  }
+  p{
+    color: #fff;
+    margin-bottom: 55px;
+  }
+  h3{
+    margin-bottom: 10px;
+  }
+  .show-avatar{
+    margin-top: 35px;
+      span{
+        font-size: 35px;
+        vertical-align: middle;
+        color: #fff;
+      }
+      span:nth-of-type(1){
+        margin-right: 20px;
+      }
+      span:nth-of-type(2){
+        margin-left: 10px;
+      }
+      li{
+        margin-right: 10px;
+        display: inline-block;
+        img{
+          vertical-align: middle;
+        }
+      }
+  }
+}
+.seventh-screen:before{
+  @include opatiytBgBefore(500px);
+  @media all and (max-width: 600px) {
+      height: 100%;
+  }
+}
+
+.eighth-screen{
+  .form-left,.form-right{
+    padding: 0 10px;
+    h1{
+      margin-bottom: 35px;
+      text-align: left;
+      color: #413d4b;
+    }
+  }
+  .form-left{
+    margin-right: 60px;
+    float: left;
+    width: 470px;
+    form{
+      text-align: left;
+      input,textarea{
+        padding: 15px 0 15px 15px;
+        display: block;
+        outline: none;
+        border: 1px solid #e5e5e5;
+        height: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      textarea{
+        width: 100%;
+        padding: 20px 0 20px 20px;
+        height: 200px;
+      }
+    }
+  }
+  .form-right{
+    float: left;
+    width: 380px;
+    ul{
+      li{
+        width: 160px;
+        height: 70px;
+        background: url("../images/logo-spirit.png");
+        display: inline-block;
+
+      }
+      li:nth-child(2n+1){
+        margin-right: 55px;
+      }
+      li:nth-last-child(2){
+        margin-top: 40px;
+      }
+      li:nth-last-child(4){
+        margin-top: 20px;
+      }
+      @for $i from 1 through 10{
+        li:nth-child(#{$i}){
+          background-position:0 (-(70*$i)+70)+px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width:1005px) {
+  .eighth-screen{
+    .form-left{
+      width: auto;
+    }
+    .form-right{
+      margin-top: 60px;
+      ul li{
+        margin-left: -40px;
+      }
+    }
+  }
+}
+
+footer{
+  @include opacityBg(260px);
+  background: url(../images/footer-bg.jpg) round;
+  .footer-list{
+    text-align: left;
+    margin-bottom: 70px;
+    .footer-item{
+      box-sizing: border-box;
+      width: 270px;
+      height: 178px;
+      display: inline-block;
+      margin-right: 35px;
+      vertical-align: bottom;
+      .footer-logo,h3{
+        line-height: 50px;
+        vertical-align: middle;
+        height: 50px;
+        margin-bottom: 25px;
+      }
+      &:nth-of-type(2){
+        padding-left: 15px;
+        .location,.call{
+          vertical-align: top;
+          width: 20px;
+        }
+        p{
+          display: inline-block;
+          padding-left: 15px;
+          width: 220px;
+          font-size: 14px;
+          margin-bottom: 25px;
+        }
+
+        .location{
+          height: 22px;
+          background: url("../images/location-icon.png") round;
+        }
+        .call{
+          height: 20px;
+          background: url("../images/call-icon.png") round;
+        }
+      }
+      &:nth-of-type(3){
+        .share-icon{
+          margin-top: 35px;
+          li{
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            background: url("../images/share-spirit.png");
+          }
+          @for $i from 1 through 6{
+            li:nth-of-type(#{$i}){
+              background-position:0 (-(35*$i)+35)+px ;
+            }
+          }
+        }
+      }
+
+      .search{
+        input{
+          box-sizing: border-box;
+          width:195px;
+          height: 45px;
+          padding: 15px;
+          background: none;
+          border: 1px solid #9993ab;
+        }
+        .send-btn{
+          box-sizing: border-box;
+          width: 70px;
+          vertical-align: middle;
+          height: 45px;
+          background: #a199b3;
+          text-align: center;
+          .send-icon{
+            width:25px;
+            height: 25px;
+            background: url("../images/send-icon.png");
+          }
+        }
+      }
+
+    }
+  }
+  .footer-info{
+    .footer-nav{
+      float: left;
+      li{
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+    .copyright{
+      text-align: right;
+    }
+  }
+}
+footer:before{
+  @include opatiytBgBefore(400px);
+}
+@media all and (max-width: 600px){
+  footer{
+    height: auto;
+    background: none;
+    .footer-list{
+      text-align: center;
+      .footer-item,.footer-item h3{
+        margin-bottom: 10px;
+      }
+    }
+    .footer-info {
+      .footer-nav{
+        float: none;
+      }
+      .copyright{
+        margin-top: 10px;
+        text-align: center;
+      }
+
+    }
+  }
+  footer:before{
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
