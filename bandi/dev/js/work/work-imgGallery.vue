@@ -5,8 +5,8 @@
     <div class="work-gallery-hover" >
         <div class="work-gallery-content">
             <div class="icon icon-work-eye"></div>
-            <h3>{{dataP}}</h3>
-            <p>{{dataH3}}</p>
+            <h3>{{dataH3}}</h3>
+            <p>{{dataP}}</p>
         </div>
     </div>
 </template>

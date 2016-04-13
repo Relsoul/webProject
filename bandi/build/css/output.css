@@ -77,6 +77,30 @@ ul {
   margin-top: 40px;
   color: #5b646e; }
 
+.share-twitter-highlight {
+  background-position: 0px -98px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 29px;
+  height: 27px; }
+
+.share-facebook-highlight {
+  background-position: 0px -153px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 19px;
+  height: 31px; }
+
+.share-google-highlight {
+  background-position: 0px -184px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 31px;
+  height: 31px; }
+
 header {
   position: relative;
   height: 800px;
@@ -135,7 +159,7 @@ header {
       width: 26px;
       height: 26px; }
     header .header-share li:nth-of-type(4) {
-      background-position: 0px -98px;
+      background-position: 0px -125px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: inline-block;
@@ -226,7 +250,7 @@ header {
         margin-top: 0;
         color: #fff; }
     .work .work-gallery-hover .icon-work-eye {
-      background-position: 0px -126px;
+      background-position: 0px -215px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: inline-block;
@@ -234,6 +258,45 @@ header {
       height: 48px; }
 
 .team {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 215px;
+  position: relative; }
   .team h1 {
     color: #0eb493; }
+  .team .team-gallery {
+    margin-top: 105px; }
+    .team .team-gallery li {
+      margin-right: 20px; }
+      .team .team-gallery li h3 {
+        margin-top: 10px;
+        color: #062033; }
+      .team .team-gallery li h3.hovers {
+        color: #0eb493; }
+      .team .team-gallery li p {
+        margin-top: 5px;
+        color: #5b646e; }
+  .team .team-gallery-hover {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    background: #0eb493;
+    opacity: 0.85;
+    color: #fff;
+    overflow: hidden;
+    word-break: break-all;
+    padding: 20px; }
+    .team .team-gallery-hover ul {
+      position: absolute;
+      bottom: 25px;
+      left: 70px; }
+      .team .team-gallery-hover ul li {
+        width: 40px;
+        height: 40px;
+        background: #0d7c67;
+        opacity: 0.7;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 40px;
+        box-sizing: border-box;
+        padding-top: 6px; }

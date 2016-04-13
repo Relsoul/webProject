@@ -4,6 +4,7 @@
 }
 
 
+
 $baseFontSize:10px;//10px
 
 @function pxToRem($px){
@@ -100,4 +101,16 @@ $pColor:#5b646e;
 .base-p{
   margin-top: 40px;
   color: $pColor;
+}
+
+
+//小图片
+.share-twitter-highlight{
+  @include sprite($share-twitter-highlight,inline-block)
+}
+.share-facebook-highlight{
+  @include sprite($share-facebook-highlight,inline-block)
+}
+.share-google-highlight{
+  @include sprite($share-google-highlight,inline-block)
 }

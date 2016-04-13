@@ -2,8 +2,11 @@ $icon-love: -0px -0px 26px 22px;
 $share-twitter: -0px -22px 28px 24px;
 $share-facebook: -0px -46px 18px 26px;
 $share-google: -0px -72px 26px 26px;
-$share-ball: -0px -98px 28px 28px;
-$eye: -0px -126px 48px 48px;
+$share-twitter-highlight: -0px -98px 29px 27px;
+$share-ball: -0px -125px 28px 28px;
+$share-facebook-highlight: -0px -153px 19px 31px;
+$share-google-highlight: -0px -184px 31px 31px;
+$eye: -0px -215px 48px 48px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
